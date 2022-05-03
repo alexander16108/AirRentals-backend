@@ -6,7 +6,6 @@
 
 # Ignore bundler config.
 /.bundle
-node_modules/
 
 # Ignore all logfiles and tempfiles.
 /log/*
@@ -25,8 +24,6 @@ node_modules/
 /tmp/storage/*
 !/tmp/storage/
 !/tmp/storage/.keep
-
-/public/assets
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key

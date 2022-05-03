@@ -1,7 +1,6 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
-#   Character.create(name: "Luke", movie: movies.first)
+@plane1 = Plane.create(name: "Lighter-than-air", capacity: "2", range: "1,000 miles", url: "https://www.jetblue.com/", speed: "1,500 mph", city: "New York", images: "https://upload.wikimedia.org/wikipedia/commons/a/a2/Me_262_flight_show_at_ILA_2006_%28cropped%29.jpg", price: "100")
+@plane2 = Plane.create(name: "Fighters", capacity: "2", range: "1,000 miles", url: "https://www.jetblue.com/", speed: "1,500 mph", city: "New York", images: "https://upload.wikimedia.org/wikipedia/commons/a/a2/Me_262_flight_show_at_ILA_2006_%28cropped%29.jpg", price: "100")
+@plane3 = Plane.create(name: "Bomers", capacity: "2", range: "1,000 miles", url: "https://www.jetblue.com/", speed: "1,500 mph", city: "New York", images: "https://upload.wikimedia.org/wikipedia/commons/a/a2/Me_262_flight_show_at_ILA_2006_%28cropped%29.jpg", price: "100")
+@plane4 = Plane.create(name: "Military transport", capacity: "2", range: "1,000 miles", url: "https://www.jetblue.com/", speed: "1,500 mph", city: "New York", images: "https://upload.wikimedia.org/wikipedia/commons/a/a2/Me_262_flight_show_at_ILA_2006_%28cropped%29.jpg", price: "100")
+@plane5 = Plane.create(name: "Reconnaissance and surveillance", capacity: "2", range: "1,000 miles", url: "https://www.jetblue.com/", speed: "1,500 mph", city: "New York", images: "https://upload.wikimedia.org/wikipedia/commons/a/a2/Me_262_flight_show_at_ILA_2006_%28cropped%29.jpg", price: "100")
+@plane6 = Plane.create(name: "Maritime patrol", capacity: "2", range: "1,000 miles", url: "https://www.jetblue.com/", speed: "1,500 mph", city: "New York", images: "https://upload.wikimedia.org/wikipedia/commons/3/3f/US_Navy_P-8_Poseidon_taking_off_at_Perth_Airport.jpg", price: "100")
