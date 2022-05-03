@@ -17,7 +17,7 @@ gem "rack-cors"
 # gem "jbuilder"
 gem 'dotenv-rails', groups: [:development, :test]
 
-gem "devise"
+gem 'devise'
 gem "devise-jwt"
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
