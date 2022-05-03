@@ -7,18 +7,18 @@ ruby "3.0.3"
 gem "rails", "~> 7.0.2", ">= 7.0.2.4"
 
 # Use postgresql as the database for Active Record
-gem "pg", "~> 1.1"
+gem 'pg', '~> 1.1'
 
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"
 
-gem "rack-cors"
+gem 'rack-cors'
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 # gem "jbuilder"
 gem 'dotenv-rails', groups: [:development, :test]
 
 gem 'devise'
-gem "devise-jwt"
+gem 'devise-jwt'
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 
