@@ -5,7 +5,7 @@ Rails.application.routes.draw do
                  registrations: 'users/registrations'
              }
              resources :user do 
-              resources :rents
+              resources :reservations
             end
             resources :planes
             get '/member-data', to: 'members#show'
