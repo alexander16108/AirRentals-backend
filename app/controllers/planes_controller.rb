@@ -14,7 +14,7 @@ class PlanesController < ApplicationController
   end
 
   def create
-    plane = Plane.new(Planes_params)
+    plane = Plane.new(planes_params)
     plane.reservation_expiry_date = Date.civil(DateTime.now.year, DateTime.now.month, -1) - 1.month
     if plane.save
       render json: { success: true, Planes: plane }, status: :created
@@ -23,7 +23,7 @@ class PlanesController < ApplicationController
     end
   end
 
-  def Planes_params
+  def planes_params
     params.require(:Planes).permit(:name, :capacity, :range, :url, :speed, :city, :images, :price)
   end
 end
