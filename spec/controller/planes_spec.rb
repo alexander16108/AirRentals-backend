@@ -1,10 +1,9 @@
 require 'rails_helper'
 RSpec.describe User, type: :feature do
   describe 'Plane' do
-    
     # rubocop:disable Layout/LineLength
     subject do
-      Plane.create(name: "Private jet", capacity: "2", range: "1,000 miles", url: "https://www.jetblue.com/", speed: "1,500 mph", city: "New York", images: "https://cutt.ly/BGGAzoH", price: "4325")
+      Plane.create(name: 'Private jet', capacity: '2', range: '1,000 miles', url: 'https://www.jetblue.com/', speed: '1,500 mph', city: 'New York', images: 'https://cutt.ly/BGGAzoH', price: '4325')
     end
 
     # rubocop:enable Layout/LineLength
@@ -21,7 +20,7 @@ RSpec.describe User, type: :feature do
     end
 
     it 'shows the plane\'s image' do
-      expect(subject).to have_attributes(url: "https://www.jetblue.com/")
+      expect(subject).to have_attributes(url: 'https://www.jetblue.com/')
     end
   end
 end
