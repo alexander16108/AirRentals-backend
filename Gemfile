@@ -15,10 +15,10 @@ gem 'puma', '~> 5.0'
 gem 'rack-cors'
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 # gem "jbuilder"
-gem 'dotenv-rails', groups: %i[development test]
-gem 'rspec'
 gem 'devise'
 gem 'devise-jwt'
+gem 'dotenv-rails', groups: %i[development test]
+gem 'rspec'
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 
