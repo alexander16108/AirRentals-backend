@@ -17,6 +17,7 @@ gem 'rack-cors'
 # gem "jbuilder"
 gem 'devise'
 gem 'devise-jwt'
+gem 'rswag'
 gem 'dotenv-rails', groups: %i[development test]
 gem 'rspec'
 # Use Redis adapter to run Action Cable in production
@@ -44,6 +45,7 @@ group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem 'debug', platforms: %i[mri mingw x64_mingw]
   gem 'rspec-rails'
+  gem 'rswag-specs'
 end
 
 group :development do
