@@ -1,7 +1,6 @@
 require 'rails_helper'
 RSpec.describe User, type: :feature do
   describe 'Plane' do
-    date = Date.civil(DateTime.now.year, DateTime.now.month, -1) - 1.month
     
     # rubocop:disable Layout/LineLength
     subject do
