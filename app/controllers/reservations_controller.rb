@@ -36,6 +36,7 @@ class ReservationsController < ApplicationController
 
   def destroy
     @reservation.destroy
+    render json: {message: 'Deleted Reservation'}
   end
 
   private

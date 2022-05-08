@@ -6,4 +6,5 @@ class Reservation < ApplicationRecord
   validates :end_of_reservation, presence: true
   validates :user_id, presence: true
   validates :plane_id, presence: true
+  validates_inclusion_of :cancelled, in: [true, false]
 end
