@@ -93,9 +93,34 @@ paths:
           description: successful
     post:
       summary: create reservation
+      parameters: []
       responses:
         '200':
           description: successful
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                date_of_reservation:
+                  type: string
+                  format: datetime
+                end_of_reservation:
+                  type: string
+                  format: datetime
+                cancelled:
+                  type: boolean
+                user_id:
+                  type: number
+                plane_id:
+                  type: number
+              required:
+              - date_of_reservation
+              - end_of_reservation
+              - cancelled
+              - user_id
+              - plane_id
   "/user/{user_id}/reservations/{id}":
     parameters:
     - name: user_id
