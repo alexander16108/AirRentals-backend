@@ -17,6 +17,24 @@ RSpec.describe 'planes', type: :request do
 
     post('create plane') do
       response(200, 'successful') do
+        consumes 'application/json'
+        parameter name: :plane, in: :body, schema: {
+          type: :object,
+          properties: {
+            Plane: {
+              properties:{
+            name: { type: :string },
+            capacity: { type: :number },
+            images: { type: :string },
+            price: { type: :string },
+            range: { type: :string },
+            speed: { type: :string },
+            url: {type: :string},
+            city: { type: :string },}
+      }
+          },
+          required: %w[name capacity images speed range url city price reservation_expiry_date]
+        }
         after do |example|
           example.metadata[:response][:content] = {
             'application/json' => {

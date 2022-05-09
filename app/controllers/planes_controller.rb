@@ -14,16 +14,16 @@ class PlanesController < ApplicationController
   end
 
   def create
-    plane = Plane.new(planes_params)
-    plane.reservation_expiry_date = Date.civil(DateTime.now.year, DateTime.now.month, -1) - 1.month
-    if plane.save
-      render json: { success: true, Planes: plane }, status: :created
+    @plane = Plane.new(planes_params)
+    @plane.reservation_expiration_date = Date.civil(DateTime.now.year, DateTime.now.month, -1) - 1.month
+    if @plane.save
+      render json: { success: true, Plane: @plane }, status: :created
     else
-      render json: Planes.errors, status: :unprocessable_entity
+      render json: Plane.errors, status: :unprocessable_entity
     end
   end
 
   def planes_params
-    params.require(:Planes).permit(:name, :capacity, :range, :url, :speed, :city, :images, :price)
+    params.require(:Plane).permit(:name, :capacity, :range, :url, :speed, :city, :images, :price)
   end
 end

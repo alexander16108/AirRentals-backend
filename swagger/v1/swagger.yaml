@@ -12,9 +12,44 @@ paths:
           description: successful
     post:
       summary: create plane
+      parameters: []
       responses:
         '200':
           description: successful
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                Plane:
+                  properties:
+                    name:
+                      type: string
+                    capacity:
+                      type: number
+                    images:
+                      type: string
+                    price:
+                      type: string
+                    range:
+                      type: string
+                    speed:
+                      type: string
+                    url:
+                      type: string
+                    city:
+                      type: string
+              required:
+              - name
+              - capacity
+              - images
+              - speed
+              - range
+              - url
+              - city
+              - price
+              - reservation_expiry_date
   "/planes/{id}":
     parameters:
     - name: id
