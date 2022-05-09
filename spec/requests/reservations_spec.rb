@@ -24,7 +24,7 @@ RSpec.describe 'reservations', type: :request do
       response(200, 'successful') do
         let(:user_id) { '123' }
 
-           consumes 'application/json'
+        consumes 'application/json'
         parameter name: :lease, in: :body, schema: {
           type: :object,
           properties: {
@@ -36,7 +36,7 @@ RSpec.describe 'reservations', type: :request do
           },
           required: %w[date_of_reservation end_of_reservation cancelled user_id plane_id]
         }
-		
+
         after do |example|
           example.metadata[:response][:content] = {
             'application/json' => {

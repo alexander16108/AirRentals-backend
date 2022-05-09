@@ -22,16 +22,17 @@ RSpec.describe 'planes', type: :request do
           type: :object,
           properties: {
             Plane: {
-              properties:{
-            name: { type: :string },
-            capacity: { type: :number },
-            images: { type: :string },
-            price: { type: :string },
-            range: { type: :string },
-            speed: { type: :string },
-            url: {type: :string},
-            city: { type: :string },}
-      }
+              properties: {
+                name: { type: :string },
+                capacity: { type: :number },
+                images: { type: :string },
+                price: { type: :string },
+                range: { type: :string },
+                speed: { type: :string },
+                url: { type: :string },
+                city: { type: :string }
+              }
+            }
           },
           required: %w[name capacity images speed range url city price reservation_expiry_date]
         }
