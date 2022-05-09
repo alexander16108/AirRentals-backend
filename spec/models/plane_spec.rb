@@ -21,7 +21,7 @@ RSpec.describe Plane, type: :model do
     expect(subject.images).to eq('https://cutt.ly/sGGPomv')
   end
 
-  it 'should display apartment capacity' do
+  it 'should display plane capacity' do
     expect(subject.capacity).to eq(2)
   end
 end
