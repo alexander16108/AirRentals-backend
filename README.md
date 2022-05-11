@@ -10,26 +10,31 @@
 ## Run project on your machine follow these steps
 
 - 1
-- ```
+ ```
 git clone git@github.com:alexander16108/AirRentals-backend.git
 ```
+
 - 2
 ```
 cd AirRentals-backend
 ```
 - 3
+
 ```
 bundle install
 ```
 - 4
+
 ```
 rails db:migrate:reset
 ```
 - 5
+
 ```
 rails db:seed
 ```
 - 6
+
 ```
 rails s
 ```
