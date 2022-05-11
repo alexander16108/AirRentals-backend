@@ -6,10 +6,10 @@ Rails.application.routes.draw do
                  sessions: 'users/sessions',
                  registrations: 'users/registrations'
              }
-             resources :user do 
+             resources :user, only: [:index] do 
               resources :reservations
             end
-            resources :planes
+            resources :planes, only: [:index, :show, :create, :destroy] 
             get '/member-data', to: 'members#show'
             get '/users', to: 'users#index' 
 end
