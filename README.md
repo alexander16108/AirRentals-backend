@@ -11,7 +11,7 @@
 [Click here](https://aviones-api.herokuapp.com/api-docs)
 
 ## Link to FrontEnd app 
-[click here](git@github.com:Tumworobere/AirRovers-Frontend-App.git)
+[click here](https://github.com/Tumworobere/AirRovers-Frontend-App)
 
 ## Run project on your machine follow these steps
 
