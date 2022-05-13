@@ -7,6 +7,12 @@
 - Ruby on rails
 - JWT
 
+## Link to API Documentation
+[Click here](https://aviones-api.herokuapp.com/api-docs)
+
+## Link to FrontEnd app 
+[click here](git@github.com:Tumworobere/AirRovers-Frontend-App.git)
+
 ## Run project on your machine follow these steps
 
 - 1
