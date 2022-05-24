@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name_of_plane: MyString
+  capacity: 1
+  range: MyString
+  url: MyString
+  speed: MyString
+  images: MyString
+  price: MyString
+
+two:
+  name_of_plane: MyString
+  capacity: 1
+  range: MyString
+  url: MyString
+  speed: MyString
+  images: MyString
+  price: MyString
